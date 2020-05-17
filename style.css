@@ -102,7 +102,16 @@ header .social-apps a:hover {
     color: #186684;
 }
 
-.layer-one img {
+.layer-one {
+    height: 571px;
+}
+
+.left-box1 {
+    float: left;
+    width: 50%;
+}
+
+.right-box1 {
     float: right;
     width: 50%;
 }
@@ -111,57 +120,132 @@ header .social-apps a:hover {
     font-family: 'Nova Flat', cursive;
     font-size: 42px;
     color: #186684;
+    margin-top: 150px;
 }
 
-.layer-one p {
+.layer-one p,
+.layer-two p,
+.layer-three p {
     font-family: 'Catamaran', sans-serif;
     font-size: 20px;
 }
 
-.layer-one button {
+.layer-one h2,
+.layer-one p{
+    margin-left: 15%;
+    width: 70%;
+}
+
+.layer-one button,
+.layer-two button,
+.layer-three button {
     font-family: 'Nova Flat', cursive;
     font-size: 24px;
     color: #186684;
+    margin-left: 15%;
+    background-color: white;
+    border: 2px solid #e85b26;
+    margin-top: 10px;
+    width: 170px;
+    height: 45px;
 }
 
-.layer-two img {
+.layer-one button:hover,
+.layer-two button:hover,
+.layer-three button:hover {
+    background-color: #E85B26;
+    color: white;
+}
+
+.layer-two {
+    height: 571px;
+}
+
+.left-box2 {
     float: left;
     width: 50%;
+}
+
+.right-box2 {
+    float: right;
+    width: 50%;
+}
+
+.layer-two h2,
+.layer-two p {
+    margin-left: 15%;
+    width: 70%;
 }
 
 .layer-two h2 {
     font-family: 'Nova Flat', cursive;
     font-size: 42px;
     color: #186684;
+    margin-top: 150px;
 }
+
+.layer-three {
+    background-color: #f4f4f4;
+    height: 436px;
+}
+
+.layer-three h2,
+.layer-three p {
+    margin-left: 31%; 
+}  
 
 .layer-three img {
     float: left;
+    width: 20%;
+    margin-top: 4%;
+    margin-left: 8%;
 }
 
 .layer-three h2 {
     font-family: 'Nova Flat', cursive;
     font-size: 42px;
     color: #186684;
+    padding-top: 4%;
+    margin-top: 4px;
+}
+
+.layer-three p {
+    width: 60%;
 }
 
 .layer-three button {
     font-family: 'Nova Flat', cursive;
     font-size: 24px;
     color: #186684;
-}
-
-.thegram img {
-    width: calc(30% - -15px);
-    margin: 1%;
+    margin-left: 3%;
 }
 
 .links {
     background-image: url(./image-5@2x.png);
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: contain;
+    padding-top: 6%;
+}
+
+.links-box {
+    background-color: #e3e4ea;
+    height: 70%;
+    width: 42%;
+    margin: 0 auto;
+    padding-left: 3%;
+}
+
+.links ul {
+    display: inline;
 }
 
 .links i {
     color: #E85B26;
+    margin-right: 0%;
+    margin-top: 13%;
+    padding: 2% 8%;
+    padding-left: 13%;
 }
 
 .links li {
@@ -170,6 +254,25 @@ header .social-apps a:hover {
     color: #186684;
     font-weight: 600;
     display: inline;
+    padding-right: 5%;
+}
+
+.button1, .button2, .button3 {
+    width: calc(30% - 10px);
+}
+
+.links-list a {
+    color: #186684;
+}
+
+.links-list a:hover {
+    color: #E85B26;
+}
+
+.thegram img {
+    width: calc(30% - -15px);
+    margin: 1%;
+    margin-bottom: 6%;
 }
 
 .thegram > h2:nth-child(1) {
@@ -179,10 +282,22 @@ header .social-apps a:hover {
     color: #186684;
 }
 
-
-footer button {
-    text-transform: uppercase;
+.box-color {
+    background-color: #f4f4f4;
+    padding-top: 61px;
 }
+
+footer .contact-left { 
+    float: left;
+    width: 50%;
+    padding-bottom: 86px;
+}
+
+footer .contact-right {
+    float: right;
+    width: 50%;
+    padding-bottom: 93px;
+} 
 
 footer h2 {
     font-family: 'Nova Flat', cursive;
@@ -190,13 +305,70 @@ footer h2 {
     color: #E85B26;
 }
 
+.contact-left h2 {
+    margin-bottom: 1%;
+}
+
+.contact-right h2 {
+    margin-bottom: -2%;
+}
+
+.contact-left,
+.contact-right {
+    background-color: #f4f4f4;
+    margin-top: -1%;
+}
+
+.contact-left p,
+.contact-right p {
+    color: #1f2022;
+    font-family: 'Nova Flat', cursive;
+    text-align: left;
+    background-color: #f4f4f4;
+}
+
+.contact-left p {
+    margin-top: 3px;
+    margin-left: 20%;
+    margin-bottom: 3px;
+    margin-right: 0;
+    padding-left: 20%;
+}
+
+.contact-left p span {
+    display: block;
+}
+
+.contact-left h2 {
+    margin-left: 20%;
+}
+
+.contact-right form {
+    float: left;
+}
+
+footer button, input {
+    line-height: 2.0;
+}
+
+
+.bottom ul {
+    margin-left: 35%;
+}
+
 footer nav li {
     display: inline;
 }
 
 footer nav a {
-    color: #1f2022;
+    color: black;
     font-size: 24px;
+    padding: 0 11px;
+}
+
+footer nav a:hover,
+footer nav a:focus {
+    color: #E85B26;
 }
 
 footer li {
@@ -205,9 +377,28 @@ footer li {
     color: #1f2022;
 }
 
+footer button {
+    text-transform: uppercase;
+    font-family: 'Nova Flat', cursive;
+    color: #f4f4f4;
+    background-color: #186684;
+    border: 3px solid #e85b26;
+}
+
+footer button:hover {
+    background-color: #e85b26;
+}
+
 footer p {
     color: white;
     text-align: center;
     background-color: black;
     width: 100%;
+    float: inline-end;
+}
+
+.copyright p {
+    line-height: 2;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
