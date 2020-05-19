@@ -8,12 +8,11 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-
-
 img {
     display: inline-block;
     max-width: 100%;
 }
+
 html ul{
     list-style-type: none;
 }
@@ -44,6 +43,10 @@ header {
     position: relative;
 }
 
+.hamburger-menu {
+    display: none;
+}
+
 header nav ul {
     list-style-type: none;
     margin: 0;
@@ -52,7 +55,6 @@ header nav ul {
 }
 
 header nav ul li {
-    list-style-type: none;
     display: inline;
     padding-top: 1em;
     padding-left: 1em;
@@ -109,18 +111,20 @@ header .social-apps a:hover {
 .left-box1 {
     float: left;
     width: 50%;
+    height: 100%;
 }
 
 .right-box1 {
     float: right;
     width: 50%;
+    height: 100%;
 }
 
 .layer-one h2 {
     font-family: 'Nova Flat', cursive;
     font-size: 42px;
     color: #186684;
-    margin-top: 150px;
+    margin-top: 25%;
 }
 
 .layer-one p,
@@ -164,11 +168,13 @@ header .social-apps a:hover {
 .left-box2 {
     float: left;
     width: 50%;
+    height: 100%;
 }
 
 .right-box2 {
     float: right;
     width: 50%;
+    height: 100%;
 }
 
 .layer-two h2,
@@ -270,9 +276,8 @@ header .social-apps a:hover {
 }
 
 .thegram img {
-    width: calc(30% - -15px);
-    margin: 1%;
-    margin-bottom: 6%;
+    width: 100%;
+    padding: 0 10px;
 }
 
 .thegram > h2:nth-child(1) {
@@ -280,6 +285,14 @@ header .social-apps a:hover {
     font-family: 'Nova Flat', cursive;
     text-align: center;
     color: #186684;
+}
+
+.images-parent {
+    display: table;
+}
+
+.images {
+    display: table-cell;
 }
 
 .box-color {
@@ -316,7 +329,7 @@ footer h2 {
 .contact-left,
 .contact-right {
     background-color: #f4f4f4;
-    margin-top: -1%;
+    margin-top: -2%;
 }
 
 .contact-left p,
@@ -401,4 +414,764 @@ footer p {
     line-height: 2;
     margin-top: 0%;
     margin-bottom: 0%;
+    color: #f4f4f4;
+}
+
+@media (max-width: 1761px) {
+
+    .links-box {
+        width: 45%;
+    }
+
+}
+
+@media (max-width: 1651px){
+
+    .layer-three button {
+        margin-left: 31%;
+    }
+}
+
+@media (max-width: 1635px) {
+
+    .links-box {
+        width: 50%;
+    }
+
+    .links {
+        height: 430px;
+    }
+
+}
+
+@media (max-width: 1500px) {
+
+    .layer-one h2 {
+        margin-top: 10%;
+        width: 85%;
+        margin-left: 0%;
+    }
+
+    .layer-one p {
+        width: 85%;
+        margin-left: 0%;
+    }
+
+    .layer-one button {
+        margin-left: 0%;
+    }
+
+    .layer-two h2 {
+        margin-top: 0%;
+        width: 85%;
+    }
+
+    .layer-two p {
+        width: 85%;
+    }
+
+}
+
+@media (max-width: 1461px) {
+
+    .links-box {
+        width: 56%;
+    }
+
+    .layer-one {
+        height: 450px;
+    }
+
+    .layer-two {
+        height: 440px;
+    }
+
+    .links {
+        height: 380px;
+    }
+
+}
+
+@media (max-width: 1350px) {
+
+    header {
+        height: 700px;
+    }
+
+    .links {
+        padding-top: 2%;
+    }
+
+}
+
+@media (max-width: 1296px) {
+
+    .links-box {
+        width: 63%;
+    }
+
+    .box-color ul {
+        margin-left: 26%;
+    }
+
+    .contact-right input {
+        width: 225px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+
+    header h1 {
+        top: 11%;
+        left: 40%;
+    }
+
+    .links {
+        padding-top: 1%;
+    }
+}
+
+@media (max-width: 1150px) {
+
+    header {
+        height: 610px;
+    }
+
+    .links-box {
+        width: 70%;
+        height: 50%;
+    }
+
+    .links-box i {
+        margin-top: 4%;
+    }
+
+}
+
+@media (max-width: 1081px){
+
+    .layer-three {
+        height: 486px;
+    }
+
+    .links {
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 1025px) {
+
+    .links-box {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .layer-one h2 {
+        margin-top: 0%;
+    }
+
+    .layer-two h2 {
+        margin-top: 0%
+    }
+
+    .box-color ul {
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 926px){
+
+    .layer-two {
+        height: 477px;
+    }
+
+    .layer-three {
+        height: 535px;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    header {
+        height: 500px;  
+    }
+
+    .contact-right {
+        margin-top: -3%;
+    }
+
+    .contact-right input {
+        width: 270px;
+    }
+}
+
+@media (max-width: 892px) {
+
+    .links-box {
+        width: 89%;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .wrapper3 {
+        width: 100%;
+    }
+
+    header {
+        background-size: 180%;
+        background-position: 32% 0%;
+        height: 560px;
+    }
+
+    .hamburger-menu {
+        display: inline;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 60px;
+        background-color: rgba(227, 228, 234, 0.8);
+        left: 21%;
+        top: 18%;
+    }
+
+    .social-apps {
+        display: none;
+    }
+
+    .layer-one {
+        display: table;
+        height: 590px;
+    }
+
+    .layer-one .left-box1 {
+        display: table-footer-group;
+        float: none;
+        width: 100%;
+    }
+
+    .layer-one .right-box1 {
+        display: table-header-group;
+        float: none;
+        width: 100%;
+    }
+
+    .layer-one h2,
+    .layer-one p {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .layer-one h2 {
+        font-size: 34px;
+        padding-top: 36px;
+        padding-bottom: 20px;
+    }
+
+    .layer-one button {
+        margin-left: 39%;
+    }
+
+    .left-box2,
+    .right-box2 {
+        float: none;
+        width: 100%;
+    }
+
+    .left-box2 {
+        padding-top: 0%;
+        margin-top: -64%;
+    }
+
+    .right-box2 {
+        margin-top: -27%;
+    }
+
+    .layer-two {
+        margin-top: 20%;
+        height: 870px;
+    }
+
+    .layer-two h2,
+    .layer-two p {
+        text-align: center;
+        margin-left: 5%;
+    }
+
+    .layer-two h2 {
+        margin-top: -120px;
+    }
+
+    .layer-two p {
+        padding-top: 0px;
+        margin-top: -3%;
+        line-height: 1.25;
+    }
+
+    .layer-two button {
+        margin-left: 37%;
+    }
+
+    .layer-three {
+        margin-top: 12%;
+        height: 1119px;
+        margin-bottom: -90px;
+    }
+
+    .layer-three img {
+        float: none;
+        margin-top: 5%;
+        margin-left: 8%;
+        width: 83%;
+    }
+
+    .layer-three h2 {
+        margin-left: 0;
+        text-align: center;
+
+    }
+
+    .layer-three p {
+        width: 95%;
+        margin: 0 auto;
+        padding-bottom: 6%;
+    }
+
+    .layer-three button {
+        margin-left: 37%;
+        margin-top: -10px;
+    }
+
+    .links {
+        padding-top: 0%;
+        height: 1120px;
+        background-image: url(./image-5@2x.png);
+        background-position: top;
+        background-color: #f4f4f4;
+        background-size: 100% 55%;
+        margin-top: 10%;
+
+    }
+
+    .links-box {
+        width: 42%;
+        height: 48%;
+    }
+
+    .links-icons {
+        display: table;
+        padding-top: 0;
+        padding-left: 20%;
+        margin-top: 20%;
+    }
+
+    .links-icons i {
+        display: block;        
+        margin-top: 110%;
+        padding: 13% 8%;
+        margin-left: 90%;
+    }
+
+    .links-list {
+        margin-top: -123%;
+        margin-left: -10%;
+    }
+
+    .links-list a {
+        display: block;
+        text-align: center;
+        font-weight: 400;
+        padding-top: 85px;
+    }
+
+    .thegram {
+        margin-top: -60%;
+    }
+
+    .thegram h2 {
+        margin-top: 0%;
+    }
+
+    footer .bottom ul {
+        margin-left: -5%;
+        width: 100%;
+    }
+
+    footer nav a {
+        font-size: 26px;
+        padding: 0 4px;
+        margin-left: 11%;
+    }
+
+    .bottom ul li {
+        font-size: 15px;
+    }
+
+    footer .contact-left {
+        float: none;
+        width: 90%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    footer .contact-left h2 {
+        margin-left: 5%;
+    }
+
+    footer .contact-left p {
+        text-align: center;
+        padding-left: 5%;
+        margin-left: 5%;
+    }
+
+    footer .contact-right {
+        float: none;
+        width: 90%;
+    }
+
+    footer .contact-right h2 {
+        text-align: center;
+        margin-right: -10%;
+    }
+
+    footer .contact-right p {
+        text-align: center;
+        margin-right: -5%;
+    }
+
+    footer .contact-right form {
+        float: none;
+        border: none;
+    }
+
+    footer .contact-right input {
+        text-align: center;
+        width: 100%;
+        margin-left: 5%;
+        margin-bottom: 3%;
+    }
+
+    footer .contact-right button {
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    .presto {
+        display: none;
+    }
+}
+
+@media (max-width: 765px) {
+
+    .links-list a {
+        padding-top: 68px;
+        margin-left: 6%;
+    }
+
+}
+
+@media (max-width: 715px) {
+
+    .links-list a {
+        padding-top: 55px;
+        margin-left: 7%;
+    }
+
+}
+
+@media (max-width: 682px) {
+
+    .layer-two h2 {
+        margin-top: -230px;
+    }
+
+    .layer-three {
+        margin-top: 15%;
+    }
+
+    .links-list a {
+        margin-left: 10%;
+        padding-top: 51px;
+    }
+
+}
+
+@media (max-width: 655px) {
+
+    .links-list a {
+        margin-left: 12%;
+        padding-top: 43px;
+    }
+
+    footer .bottom ul {
+        margin-left: -10%;
+    }
+
+}
+
+@media (max-width: 632px) {
+
+    footer nav a {
+        padding: 0 0;
+    }
+
+
+}
+
+@media (max-width: 625px) {
+
+    header {
+        background-size: 231%;
+    }
+
+    .layer-one h2 {
+        padding-top: 0;
+    }
+
+    .layer-one button {
+        margin-left: 39%;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .layer-one button {
+        margin-left: 34%;
+    }
+
+    .links-icons i {
+        margin-left: 60%;
+    }
+
+    .links-list {
+        margin-top: -131%;
+    }
+
+    .links-list a {
+        margin-left: 6%;
+        padding-top: 43px;
+    }
+}
+
+@media (max-width: 586px) {
+
+    .layer-two h2 {
+        margin-top: -310px;
+    }
+
+    .links-list {
+        margin-top: -134%;
+    }
+
+}
+
+@media (max-width: 575px)  {
+
+    footer nav a {
+        margin-left: 10%;
+    }
+
+}
+
+@media (max-width: 555px) {
+
+    .layer-one h2 {
+        margin-top: -6%;
+    }
+
+    .right-box1,
+    .left-box1 {
+        height: 83%;
+    }
+
+    .left-box2 {
+        height: 87%;
+    }
+
+    .layer-three {
+        margin-top: -8%;
+    }
+
+    .links {
+        margin-top: -33%;
+    }
+
+    .links-list {
+        margin-top: -142%;
+    }
+
+}
+
+@media (max-width: 539px) {
+
+    footer nav a {
+        margin-left: 9%;
+    }
+
+}
+
+@media (max-width: 525px) {
+
+    .links-list {
+        margin-top: -153%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .layer-two h2 {
+        margin-top: -366px;
+    }
+
+    .layer-two button,
+    .layer-three button {
+        margin-left: 31%;
+    }
+
+    .links-list {
+        margin-top: -161%;
+    }
+
+}
+
+@media (max-width: 508px) {
+
+    footer nav a {
+        margin-left: 8%;
+    }
+
+}
+
+@media (max-width: 485px){
+
+    header {
+        background-size: 300%;
+    }
+
+    .layer-one button {
+        margin-left: 26%;
+    }
+
+    .links-list {
+        margin-top: -167%;
+    }
+
+    footer nav a {
+        margin-left: 7%;
+    }
+
+@media (max-width: 460px){
+
+    .layer-two h2 {
+        margin-top: -410px;
+    }
+
+    .links-icons i {
+        margin-left: 37%;
+    }
+
+    footer nav a {
+        margin-left: 6%;
+    }
+
+}
+
+@media (max-width: 450px){
+
+    .layer-one h2 {
+        margin-top: -7%;
+    }
+
+    .links-list {
+        margin-top: -118%;
+        margin-left: -29%;
+    }
+
+    .links-list a {
+        padding-top: 53px;
+        margin-left: 15%;
+    }
+
+    .links-icons {
+        padding-left: 28%;
+        margin-top: 0%;
+    }
+
+    .links-box {
+        width: 67%;
+        height: 50%;
+    }
+
+    .thegram {
+        margin-top: -100%;
+    }
+
+    footer nav a {
+        margin-left: 5%;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .links-list {
+        margin-top: -129%;
+    }
+
+
+    .links-list a {
+        margin-left: 20%;
+    }
+
+    .layer-three button {
+        margin-left: 29%;
+    }
+
+    footer nav a {
+        margin-left: 4%;
+    }
+
+}
+
+@media (max-width: 400px){
+
+    .layer-two h2 {
+        margin-top: -449px;
+    }
+
+    footer nav a {
+        margin-left: 3%;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    footer nav a {
+        margin-left: 2%;
+    }
+}
+
+
 }
